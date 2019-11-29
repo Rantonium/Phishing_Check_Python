@@ -4,7 +4,7 @@
 #clar incercarea de phishing
 url1="https://webmail.tuiasi.ro/squirrel/src/webmail.php"
 url2="https://webmai1.tuiasi.ro/squirrel/src/webmail.php"
-def urlSimilarity(url1, url2):
+def urlSimilar(url1, url2):
     import urllib.parse   
     u1 = urllib.parse.urlparse(url1)
     q1 = urllib.parse.parse_qs(u1.query, keep_blank_values=True)
@@ -34,6 +34,6 @@ def urlSimilarity(url1, url2):
             scor += 1
     print(scor)
     return scor
-urlSimilarity(url1,url1)
+urlSimilar(url1,url1)
 print("vs")
-urlSimilarity(url1,url2)
+urlSimilar(url1,url2)
