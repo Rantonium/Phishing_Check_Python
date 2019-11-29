@@ -1,5 +1,7 @@
+url1="https://codesignal.com/home/test?param1=42&param3=testing&login=admin&param4=abc&param5=codesignal"
+url2="https://codesignal.com/home/secret/test?param3=fish&param1=42&codesignal=admin&param5=test"
 def urlSimilarity(url1, url2):
-    import urllib    
+    import urllib.parse   
     u1 = urllib.parse.urlparse(url1)
     q1 = urllib.parse.parse_qs(u1.query, keep_blank_values=True)
     p1 = u1.path.split('/')[1:]
@@ -26,6 +28,8 @@ def urlSimilarity(url1, url2):
     for key in key_query_comune:
         if q1[key] == q2[key]:
             scor += 1
+    print(scor)
     return scor
-    
-#functia returneaza un scor bazat pe similaritatile dintre cele 2 url-uri
+urlSimilarity(url1,url1)
+print("vs")
+urlSimilarity(url1,url2)
