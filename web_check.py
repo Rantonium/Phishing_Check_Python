@@ -1,3 +1,7 @@
+#Functie care compara 2 url-uri in ideea de a gasi tentativele de phishing
+#Compar scheme,netloc,paths,query-uri
+#in cazul de fata daca comparam url1 cu url2 (url1 are un scor de 18) iar url2 va primi scor 8 in urma comparatiei, determinand
+#clar incercarea de phishing
 url1="https://webmail.tuiasi.ro/squirrel/src/webmail.php"
 url2="https://webmai1.tuiasi.ro/squirrel/src/webmail.php"
 def urlSimilarity(url1, url2):
