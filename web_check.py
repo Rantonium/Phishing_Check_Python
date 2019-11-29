@@ -1,5 +1,5 @@
-url1="https://codesignal.com/home/test?param1=42&param3=testing&login=admin&param4=abc&param5=codesignal"
-url2="https://codesignal.com/home/secret/test?param3=fish&param1=42&codesignal=admin&param5=test"
+url1="https://webmail.tuiasi.ro/squirrel/src/webmail.php"
+url2="https://webmai1.tuiasi.ro/squirrel/src/webmail.php"
 def urlSimilarity(url1, url2):
     import urllib.parse   
     u1 = urllib.parse.urlparse(url1)
